@@ -1,35 +1,65 @@
-# cfm56-fmea-mcdm-reproducible
+# Evidence-Informed Failure Prioritization of CFM Aero-Engine SDRs Using FMEA-MCDM
 
-Reproducible artifacts for a data-driven FMEA–MCDM case study on the CFM56-7B engine (Boeing 737).
+This repository contains the reproducibility package for the manuscript:
 
-## Overview
-This repository provides a fully reproducible implementation of a data-driven FMEA–MCDM framework using real-world aviation data sources.
+**Evidence-Informed Failure Prioritization of CFM Aero-Engine Service Difficulty Reports Using FMEA-MCDM and Robustness Analysis**
 
-## Contents
-- `analysis.py`: End-to-end Python script
-- `requirements.txt`: Dependencies
-- `outputs/`: Generated results (Excel + figures)
-- `docs/`: Additional documentation
+## Purpose
 
-## Reproducibility
-All results reported in the manuscript can be regenerated using:
+The package reproduces the screening-level FMEA-MCDM analysis used to prioritize CFM aero-engine Service Difficulty Report (SDR) keyword categories. It includes query-count inputs, the decision matrix, severity/detection scoring rationale, weighting results, ranking outputs, period-adjusted occurrence sensitivity, rank-correlation outputs, perturbation outputs and generated figures.
+
+## Important interpretation note
+
+The occurrence values are **keyword-query occurrence indicators** from the AviationDB/FAA SDR query interface. They are not unique event counts, not model-specific reliability estimates and not failure rates. The period-adjusted sensitivity analysis annualizes keyword counts only to test the effect of unequal observation windows; it does not replace exposure normalization using engine-hours, flight cycles or fleet denominators.
+
+## Repository structure
+
+```text
+data/
+  query_counts.csv
+  decision_matrix.csv
+  decision_matrix_period_adjusted.csv
+results/
+  weight_comparison.csv
+  ranking_results.csv
+  top5_rank_stability.csv
+  spearman_rank_correlation.csv
+  kendall_rank_correlation.csv
+  period_adjusted_sensitivity.csv
+  perturbation_summary.csv
+figures/
+  figure1_pipeline.png
+  figure2_weights.png
+  figure3_period_adjusted_sensitivity.png
+  figure4_perturbation.png
+src/
+  analysis.py
+  make_figures.py
+docs/
+  supplementary_material.docx
+requirements.txt
+README.md
+```
+
+## Reproduction
+
+From the repository root:
 
 ```bash
 pip install -r requirements.txt
-python analysis.py
+python src/analysis.py
+python src/make_figures.py
+```
 
-Outputs
+The analysis script writes updated CSV outputs to `results/` and the figure script regenerates the manuscript figures in `figures/`.
 
-The following artifacts are generated:
-dataset_and_results.xlsx
-Figure1_Workflow.png
-Figure2_RankingComparison.png
-Figure3_CRITIC_Weights.png
-Figure4_Sensitivity_wS.png
+## Data sources
 
-Data Sources
-NTSB accident reports (2016, 2019)
-FAA Service Difficulty Reports (SDR)
+The public source inputs are:
 
-License
-MIT License
+- AviationDB/FAA Service Difficulty Report query interface.
+- National Transportation Safety Board investigation/report material for CFM56-7B fan-blade separation cases.
+
+## Version status
+
+This is the v9 pre-DOI package. Replace the manuscript and cover-letter placeholders `[GITHUB_REPOSITORY_URL]` and `[ZENODO_DOI]` after the public GitHub update and Zenodo archive release.
