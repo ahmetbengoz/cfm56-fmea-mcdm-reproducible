@@ -62,4 +62,4 @@ The public source inputs are:
 
 ## Version status
 
-This is the archived reproducibility package associated with the manuscript. The Zenodo DOI is: [DOI].
+This is the archived reproducibility package associated with the manuscript. Zenodo archive: https://doi.org/10.5281/zenodo.20492171.
