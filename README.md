@@ -62,4 +62,4 @@ The public source inputs are:
 
 ## Version status
 
-This is the v9 pre-DOI package. Replace the manuscript and cover-letter placeholders `[GITHUB_REPOSITORY_URL]` and `[ZENODO_DOI]` after the public GitHub update and Zenodo archive release.
+This is the archived reproducibility package associated with the manuscript. The Zenodo DOI is: [DOI].
