@@ -1,0 +1,16 @@
+Failure category,Category type,SDR keyword,Occurrence count,Observation period
+Stall event,Event-level,stall,906,1986-2024
+Fan blade issue,Component/system-level,fan blade,667,2012-2024
+Vibration issue,Condition/symptom-level,vibration,363,1986-2024
+Compressor issue,Component/system-level,compressor,297,1986-2024
+Fuel pump failure,Component/system-level,fuel pump,239,1990-2024
+Fuel leak,Condition/symptom-level,fuel leak,195,1993-2024
+Sensor fault,Component/system-level,sensor,188,1990-2024
+Crack indication,Condition/symptom-level,crack,167,1986-2024
+Oil pressure issue,Condition/symptom-level,oil pressure,114,1986-2024
+Turbine issue,Component/system-level,turbine,104,1988-2024
+Oil leak,Condition/symptom-level,oil leak,101,1998-2024
+Oil quantity issue,Condition/symptom-level,oil quantity,99,1987-2024
+Engine shutdown,Event-level,engine shutdown,90,1999-2024
+Bearing failure,Component/system-level,bearing,84,1986-2024
+Fuel pressure issue,Condition/symptom-level,fuel pressure,1,2005
