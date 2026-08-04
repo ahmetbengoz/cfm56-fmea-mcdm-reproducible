@@ -1,6 +1,6 @@
-Rank,TOPSIS_CRITIC,TOPSIS_Entropy,TOPSIS_Equal,VIKOR_CRITIC,VIKOR_Entropy,VIKOR_Equal
+Rank,TOPSIS_CRITIC,VIKOR_CRITIC,TOPSIS_Entropy,VIKOR_Entropy,TOPSIS_Equal,VIKOR_Equal
 1,Fan blade issue,Fan blade issue,Fan blade issue,Fan blade issue,Fan blade issue,Fan blade issue
-2,Stall event,Stall event,Stall event,Stall event,Stall event,Stall event
-3,Crack indication,Crack indication,Crack indication,Compressor issue,Compressor issue,Compressor issue
-4,Turbine issue,Turbine issue,Turbine issue,Crack indication,Crack indication,Crack indication
-5,Compressor issue,Compressor issue,Compressor issue,Turbine issue,Turbine issue,Turbine issue
+2,Crack indication,Stall event,Stall event,Stall event,Stall event,Stall event
+3,Turbine issue,Crack indication,Crack indication,Crack indication,Crack indication,Crack indication
+4,Bearing failure,Compressor issue,Turbine issue,Compressor issue,Turbine issue,Compressor issue
+5,Stall event,Turbine issue,Bearing failure,Turbine issue,Bearing failure,Turbine issue

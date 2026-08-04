@@ -1,0 +1,8 @@
+{
+  "primary_occurrence_proxy": "keyword-query count divided by inclusive searchable observation years",
+  "secondary_occurrence_proxy": "raw keyword-query count",
+  "interpretation": "screening indicators; not unique-event counts, exposure-normalized rates or reliability estimates",
+  "perturbation_seed": 42,
+  "perturbation_runs": 10000,
+  "vikor_v": 0.5
+}
