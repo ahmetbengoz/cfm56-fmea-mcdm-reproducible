@@ -48,7 +48,7 @@ src/
 tests/
   test_analysis.py
 docs/
-  supplementary_material.docx
+  EFA_FMEA_MCDM_supplementary_material.docx
 requirements.txt
 README.md
 ```
